@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resource Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      transition: background 0.3s, font-size 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+      font-size: 1.05em;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 180px;
+      z-index: 1;
+    }
+
+    .dropdown a {
+      padding: 12px 16px;
+    }
+
+    li:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="career.html">Career Support</a>
+        <div class="dropdown">
+          <a href="#">Resume Help</a>
+          <a href="#">Interview Tips</a>
+        </div>
+      </li>
+      <li>
+        <a href="financial.html">Financial Resources</a>
+        <div class="dropdown">
+          <a href="#">Budgeting</a>
+          <a href="#">Grants & Aid</a>
+        </div>
+      </li>
+      <li>
+        <a href="skills.html">Skills Development</a>
+        <div class="dropdown">
+          <a href="#">Online Courses</a>
+          <a href="#">Certifications</a>
+        </div>
+      </li>
+      <li>
+        <a href="home.html">Home Tips</a>
+        <div class="dropdown">
+          <a href="#">Cleaning Hacks</a>
+          <a href="#">Organizing</a>
+        </div>
+      </li>
+      <li>
+        <a href="wellness.html">Wellness Insights</a>
+        <div class="dropdown">
+          <a href="#">Mental Health</a>
+          <a href="#">Fitness</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>
